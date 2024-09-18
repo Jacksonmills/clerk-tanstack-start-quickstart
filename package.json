@@ -7,8 +7,8 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start",
-    "lint": "prettier --check '**/*' --ignore-unknown && eslint --ext .ts,.tsx ./app",
-    "format": "prettier --write '**/*' --ignore-unknown"
+    "lint": "biome lint",
+    "format": "biome check --fix"
   },
   "dependencies": {
     "@clerk/tanstack-start": "^0.4.0",

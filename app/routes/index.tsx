@@ -1,11 +1,11 @@
 import { Button } from '@/components/ui/button';
 import {
-  SignedIn,
-  UserButton,
-  SignOutButton,
-  SignedOut,
   SignInButton,
+  SignOutButton,
   SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
 } from '@clerk/tanstack-start';
 import { createFileRoute } from '@tanstack/react-router';
 

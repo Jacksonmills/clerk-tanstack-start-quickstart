@@ -1,3 +1,5 @@
+import globalsCss from '@/app/globals.css?url';
+import { ClerkProvider } from '@clerk/tanstack-start';
 import {
   Outlet,
   ScrollRestoration,
@@ -6,8 +8,6 @@ import {
 } from '@tanstack/react-router';
 import { Body, Head, Html, Meta, Scripts } from '@tanstack/start';
 import type * as React from 'react';
-import { ClerkProvider } from '@clerk/tanstack-start';
-import globalsCss from '@/app/globals.css?url';
 
 const NotFound = () => <div>Not Found</div>;
 
