@@ -1,7 +1,12 @@
-import { Outlet, ScrollRestoration, createRootRoute } from '@tanstack/react-router'
-import { Body, Head, Html, Meta, Scripts } from '@tanstack/start'
-import type * as React from 'react'
-import { ClerkProvider } from '@clerk/tanstack-start'
+import {
+  Outlet,
+  ScrollRestoration,
+  createRootRoute,
+} from '@tanstack/react-router';
+import { Body, Head, Html, Meta, Scripts } from '@tanstack/start';
+import type * as React from 'react';
+import { ClerkProvider } from '@clerk/tanstack-start';
+import '../globals.css';
 
 export const Route = createRootRoute({
   component: () => {
@@ -9,9 +14,9 @@ export const Route = createRootRoute({
       <RootDocument>
         <Outlet />
       </RootDocument>
-    )
+    );
   },
-})
+});
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
@@ -27,5 +32,5 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         </Body>
       </Html>
     </ClerkProvider>
-  )
+  );
 }
