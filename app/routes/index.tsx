@@ -15,7 +15,7 @@ export const Route = createFileRoute('/')({
 
 function Home() {
   return (
-    <div className="dark bg-background text-foreground h-full">
+    <div>
       <div className="grid place-content-center h-full">
         <h1>Index Route</h1>
         <SignedIn>
